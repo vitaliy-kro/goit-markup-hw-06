@@ -18,12 +18,14 @@
   --products-cards-border-color: #eeeeee;
   --background-hero-gradient: rgba(47, 48, 58, 0.4);
   --social-media-icons: #afb1b8;
+  --footer-mail-border: rgba(255, 255, 255, 0.3);
   --social-media-footer-background: rgba(100%, 100%, 100%, 10%);
   --hover-filter-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   --hover-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   --examples-thumb-background: rgba(47, 48, 58, 0.8);
+  --input-border-color: rgba(33, 33, 33, 0.2);
   --main-animation: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
@@ -442,6 +444,7 @@ body {
 .footer-content {
   display: flex;
   align-items: baseline;
+  /* justify-content: space-evenly; */
 }
 .footer {
   background-color: var(--hero-footer-background);
@@ -518,6 +521,51 @@ body {
 }
 .item .social-media-icons.icons-footer:hover,
 .item .social-media-icons.icons-footer:focus {
+  background-color: var(--accent-color);
+}
+
+.mailing-list {
+  margin-left: auto;
+}
+.subscribe-text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+}
+.subscribe-form {
+  display: flex;
+}
+.subscribe-mail {
+  min-width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid var(--footer-mail-border);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: inherit;
+}
+.subscribe-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  min-width: 200px;
+  border-radius: 4px;
+  border: initial;
+  cursor: pointer;
+  padding: 10px 30px;
+  margin-left: 10px;
+
+  color: var(--white-title-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--accent-color);
 }
 /* Portfolio  */
@@ -666,6 +714,7 @@ body {
   min-width: 528px;
   min-height: 581px;
   background-color: var(--main-background-color);
+  padding: 40px;
 
   position: absolute;
   top: 50%;
@@ -673,7 +722,6 @@ body {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--main-animation);
 }
-
 .modal-close {
   background-color: var(--main-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -698,4 +746,72 @@ body {
 .modal-close:hover .modal-close-icon,
 .modal-close:focus .modal-close-icon {
   fill: var(--accent-color);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  color: var(--title-text-color);
+}
+.user-information .item {
+  width: 100%;
+}
+.label {
+  font-size: 12px;
+  line-height: 1.16;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+
+  border: 1px solid var(--input-border-color);
+}
+.comment-area {
+  display: block;
+  resize: none;
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 20px;
+
+  border: 1px solid var(--input-border-color);
+}
+.agreement {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 30px;
+
+  color: var(--primary-text-color);
+}
+.agreement-conditions {
+  color: var(--accent-color);
+}
+.submit {
+  text-align: center;
+}
+.submit-button {
+  min-width: 200px;
+  padding: 10px 55px;
+  border-radius: 4px;
+  border: initial;
+
+  color: var(--white-title-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
