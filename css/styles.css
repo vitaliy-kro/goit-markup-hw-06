@@ -24,11 +24,10 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
   --hover-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    --comment-area-text: rgba(117, 117, 117, 0.5)
+  --comment-area-text: rgba(117, 117, 117, 0.5);
   --examples-thumb-background: rgba(47, 48, 58, 0.8);
   --input-border-color: rgba(33, 33, 33, 0.2);
   --main-animation: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 body {
   color: var(--primary-text-color);
@@ -834,6 +833,10 @@ body {
   padding: 12px;
   padding-left: 16px;
 
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
   outline: none;
   border: 1px solid var(--input-border-color);
   border-radius: 4px;
@@ -872,10 +875,10 @@ body {
   border: 2px solid var(--title-text-color);
   border-radius: 4px;
   fill: transparent;
-transition: box-shadow 250ms var(--main-animation);
+  transition: box-shadow 250ms var(--main-animation);
 }
 .checkbox:focus + .checkbox-icon {
-  box-shadow:  2px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.15);
 }
 .checkbox:checked + .checkbox-icon {
   background-color: var(--accent-color);
