@@ -491,26 +491,32 @@
                 </svg>
               </div>
             </li>
+            <li class="item comment-thumb">
+              <label class="user-comment label"
+                >Комментарий
+                <textarea
+                  class="comment-area"
+                  placeholder="Введите текст"
+                  name="user-comment"
+                ></textarea>
+              </label>
+            </li>
+            <li class="item agreement-thumb">
+              <label class="agreement"
+                ><input
+                  class="checkbox visually-hidden"
+                  type="checkbox"
+                  name="agreement"
+                  required
+                />
+                <svg class="checkbox-icon" width="16" height="15">
+                  <use href="./images/sprite.svg#icon-check-modal"></use>
+                </svg>
+                Соглашаюсь с рассылкой и принимаю &#xa0;
+                <a href="#" class="agreement-conditions">Условия договора</a></label
+              >
+            </li>
           </ul>
-          <div class="comment-thumb">
-            <label for="comment" class="user-comment label">Комментарий</label>
-            <textarea
-              class="comment-area"
-              id="comment"
-              placeholder="Введите текст"
-              name="user-comment"
-            ></textarea>
-          </div>
-          <div class="agreement-thumb">
-            <label class="agreement"
-              ><input class="checkbox" type="checkbox" name="agreement" required />
-              <svg class="checkbox-icon" width="16" height="15">
-                <use href="./images/sprite.svg#icon-check-modal"></use>
-              </svg>
-              Соглашаюсь с рассылкой и принимаю &#xa0;
-              <a href="#" class="agreement-conditions">Условия договора</a></label
-            >
-          </div>
           <div class="submit">
             <button type="submit" class="submit-button">Отправить</button>
           </div>

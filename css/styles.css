@@ -15,6 +15,7 @@
   --header-border-color: #ececec;
   --workers-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  --main-button-hover: #188ce8;
   --products-cards-border-color: #eeeeee;
   --background-hero-gradient: rgba(47, 48, 58, 0.4);
   --social-media-icons: #afb1b8;
@@ -224,6 +225,10 @@ body {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+}
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--main-button-hover);
 }
 /* Переваги та працівники */
 .advantages {
@@ -865,11 +870,6 @@ body {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
-.checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
 .checkbox-icon {
   margin-right: 7px;
   border: 2px solid var(--title-text-color);
@@ -894,7 +894,8 @@ body {
   color: var(--title-text-color);
   transition: color 250ms var(--main-animation);
 }
-.agreement-conditions:focus {
+.agreement-conditions:focus,
+.agreement-conditions:hover {
   color: var(--accent-color);
 }
 .checkbox:checked ~ .agreement-conditions {
@@ -920,4 +921,8 @@ body {
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
+}
+.submit-button:hover,
+.submit-button:focus {
+  background-color: var(--main-button-hover);
 }
